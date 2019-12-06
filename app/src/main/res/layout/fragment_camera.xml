@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CameraFragment">
+
+    <!--<FrameLayout-->
+        <!--android:id="@+id/camera_preview"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--/>-->
+
+    <TextureView
+        android:id="@+id/texture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300px"
+        android:layout_alignParentBottom="true"
+        >
+
+        <TextView
+            android:id="@+id/capture_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="CANCEL"
+            android:textColor="#ffffff"
+            android:visibility="invisible"
+            android:layout_marginLeft="50px"/>
+
+        <Button
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:background="@drawable/round_camera_click"
+            android:layout_centerInParent="true"
+            android:visibility="visible"
+            android:id="@+id/clickCapture"/>
+
+        <TextView
+            android:id="@+id/capture_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50px"
+            android:layout_centerVertical="true"
+            android:textColor="#ffffff"
+            android:visibility="invisible"
+            android:text="CONFIRM"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

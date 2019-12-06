@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/gic_rel_lay"
+    android:paddingLeft="20px"
+    android:paddingRight="20px"
+    >
+
+    <Button
+        android:id="@+id/gic_cancel"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:background="@color/trans"
+        android:layout_alignTop="@id/gic_image"
+        android:layout_alignRight="@id/gic_image"
+        android:alpha="0.5"
+
+        android:translationZ="1dp"
+        android:text="x"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_centerInParent="true"
+        android:id="@+id/gic_image"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:alpha="0.5"
+        android:id="@+id/gic_layer"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EDIT"
+            android:layout_centerInParent="true"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>
